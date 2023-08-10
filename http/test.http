@@ -1,0 +1,14 @@
+### 登录
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "username": "Ly",
+  "password": "123456"
+}
+
+### get 方式登录
+GET http://localhost:8080/auth/login?username=Ly&password=123456
+
+### 检查登录状态
+GET http://localhost:8080/auth/check-login
